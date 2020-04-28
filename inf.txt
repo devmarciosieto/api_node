@@ -1,11 +1,12 @@
 {
     "terminal.integrated.fontSize": 14,
+    "terminal.integrated.shell.osx": "/bin/zsh",
 
     "workbench.iconTheme": "vscode-icons",
     "workbench.startupEditor": "newUntitledFile",
 
     "editor.tabSize": 2,
-    "editor.fontSize": 16,
+    "editor.fontSize": 12,
     "editor.lineHeight": 24,
     "editor.fontFamily": "Fira Code",
     "editor.fontLigatures": true,
@@ -44,7 +45,10 @@
         "editor.codeActionsOnSave": {
         "source.fixAll.eslint": true,
         }
+      },
+      "files.associations": {
+        ".stylelintrc": "json",
+        ".prettierrc": "json"
       }
-
 }
 

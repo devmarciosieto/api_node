@@ -3,16 +3,27 @@
         "es6": true,
         "node": true
     },
-    "extends": "airbnb-base",
+    "extends": [
+      "airbnb-base",
+      "plugin:@typescript-eslint/recommended",
+      "prettier/@typescrit-eslint",
+      "plugin:prettier/recommended"
+    ],
     "globals": {
         "Atomics": "readonly",
         "SharedArrayBuffer": "readonly"
     },
+    "parser": "@typescript-eslint/parse",
     "parserOptions": {
         "ecmaVersion": 2018,
         "sourceType": "module"
     },
+    "plugins": [
+      "@typescript-eslint",
+      "prettier"
+    ],
     "rules": {
+      "prettier/prettier": "error",
       "import/extensions": [
         "error",
         "ignorePackages",
